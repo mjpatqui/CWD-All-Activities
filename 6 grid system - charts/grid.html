@@ -1,0 +1,250 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Local css-->
+    <link rel="stylesheet" href="style.css">
+    <!-- Compiled and minified CSS-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <!-- Font Awesome-->
+    <script src="https://kit.fontawesome.com/6a79530112.js" crossorigin="anonymous"></script>
+    <!-- Material Icons-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">   
+    <title>Grid System</title>
+ </head>
+ <body class="grey darken-4">
+    <!--Navigation Bar-->
+    <nav class="red darken-2">
+        <div class="container">
+            <div class="nav-wrapper">
+                <a href="#" class="brand-logo" style="font-weight: bolder;">Morissette</a>
+                <a href="#" data-target="slide-out" class="sidenav-trigger right"><i class="material-icons">menu</i></a>
+                <a>
+                    <ul class="right hide-on-med-and-down">
+                        <li class="active">
+                            <a href="#">Latest</a>
+                        </li>
+                        <li class="active">
+                            <a href="#">Songs</a>
+                        </li>
+                        <li class="active">
+                            <a href="#">Merchandise</a>
+                        </li>
+                        <li class="active">
+                            <a href="#">About</a>
+                        </li>
+                    </ul>
+                </a>
+            </div>
+        </div>
+    </nav>
+    <!--SideNav-->
+    <ul id="slide-out" class="sidenav grey darken-4">
+        <li><div class="user-view">
+          <div class="background">
+            <img src="images/mori_headerback.png" style="max-width: 100%;">
+          </div>
+          <a href="#user"><img class="circle" src="images/mori1.jpg"></a>
+          <a href="#name"><span class="white-text name" style="font-weight: bold; font-size: large;">Morissette</span></a>
+          <span class="white-text">Singer | Performer | Songwriter</span>
+        </div></li>
+        <li><a href="#!" class="white-text"><i class="material-icons white-text">feed</i>Latest</a></li>
+        <li><a href="#!" class="white-text"><i class="material-icons white-text">library_music</i>Songs</a></li>
+        <li><a href="#!" class="white-text"><i class="material-icons white-text">local_mall</i>Merchandise</a></li>
+        <li><a href="#!" class="white-text"><i class="material-icons white-text">info</i>About</a></li>
+        <li><div class="divider"></div></li>
+        <div class="socials">
+            <p class="white-text center" style="font-weight: bold;">Links</p>
+              <div class="wrapper center">
+                  <a href="#" class="icon facebook">
+                    <div class="tooltip">Facebook</div>
+                    <span><i class="fab fa-facebook-f"></i></span>
+                  </a>
+                  <a href="#" class="icon twitter">
+                    <div class="tooltip">Twitter</div>
+                    <span><i class="fab fa-twitter"></i></span>
+                  </a>
+                  <a href="#" class="icon instagram">
+                    <div class="tooltip">Instagram</div>
+                    <span><i class="fab fa-instagram"></i></span>
+                  </a>
+                  <a href="#" class="icon youtube">
+                    <div class="tooltip">Youtube</div>
+                    <span><i class="fab fa-youtube"></i></span>
+                  </a>
+              </div>
+          </div>
+          <footer class="section red darken-2 white-text center">
+                      <p>© 2022 Copyright Text</p> 
+          </footer>
+      </ul>
+
+      <!--Body Content-->
+      <!-- Latest-->
+      <section class="section section-stats center">
+        <div class="row">
+            <div class="video-container">
+                <iframe width="695" height="391" src="https://www.youtube.com/embed/uhlLLiWaV2Q" title="Morissette - Undangon Ta Ni (visualizer / lyric video)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </div>
+        </div>
+      </section>
+      <!--Section Stats-->
+      <section class="section section-stats center">
+        <div class="row" >
+            <div class="col s12 m3 l4">
+                <div class="card red darken-2 white-text center" style="border-radius: 30px;">
+                    <div class="card-image" >
+                      <img src="images/phoenix.jfif">
+                      <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">play_arrow</i></a>
+                    </div>
+                    <div class="card-content">
+                        <h5 style="margin-top: 0; font-weight:bold;">Phoenix</h5>
+                        <h6>Morissette</h6>
+                        <p>Signature</p>
+                    </div>
+                  </div>
+            </div>
+            <div class="col s12 m3 l4">
+                <div class="card red darken-2 white-text center" style="border-radius: 30px;">
+                    <div class="card-image" >
+                      <img src="images/gusto.jpg">
+                      <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">play_arrow</i></a>
+                    </div>
+                    <div class="card-content" style="padding: 12px;">
+                      <h5 style="margin-top: 0; font-weight:bold; margin-bottom: 0;">Gusto Ko Nang Bumitaw</h5>
+                      <h6>Morissette</h6>
+                      <p>Broken Marriage Vow OST</p>
+                    </div>
+                  </div>
+            </div>
+            <div class="col s12 m3 l4">
+                <div class="card red darken-2 white-text center" style="border-radius: 30px;">
+                    <div class="card-image" >
+                      <img src="images/loveyoustill.jfif">
+                      <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">play_arrow</i></a>
+                    </div>
+                    <div class="card-content">
+                    <h5 style="margin-top: 0; font-weight:bold; margin-bottom: 0;">Love You Still</h5>
+                    <h6>Morissette</h6>
+                    <p>Signature</p>
+                    </div>
+                  </div>
+            </div>
+            <div class="col s12 m3 l4">
+                <div class="card red darken-2 white-text center" style="border-radius: 30px;">
+                    <div class="card-image" >
+                      <img src="images/undangon.jfif">
+                      <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">play_arrow</i></a>
+                    </div>
+                    <div class="card-content" style="padding: 23px;">
+                    <h5 style="margin-top: 0; font-weight:bold; margin-bottom: 0; margin: 0;" >Undangon Ta Ni</h5>
+                    <h6>Morissette</h6>
+                    <p>VPOP</p>
+                    </div>
+                  </div>
+            </div>
+        </div>
+      </section>
+      <!--Most Viewed Chart-->
+      <section >
+        <div class="row">
+                <div class="col s12 m6 l6">
+                    <div id="chartContainer" style="height: 300px; width: 100%;"></div>
+                <script src="mostviewedchart.js"></script>
+                </div> 
+                <!--Comments-->
+                <div class="col s12 m6 l6">
+                    <div class="card-panel grey lighten-5 z-depth-3" style="border-radius: 50px;">
+                        <div class="row valign-wrapper">
+                            <div class="col s5">
+                                <img src="images/mori1.jpg" alt="" class="responsive-img circle">
+                            </div>
+                            <div >
+                                <h1 class="black-text" style="font-size:30px; font-weight: bold; margin-top: 0%; margin-bottom: 0%;">Morissette Amon</h1>
+                                <p class="black-text" style="font-size: 20px; margin-top: 0%;">
+                                    My dream is to produce more music in the future.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>   
+        </div> 
+      </section>
+
+      <!-- Section: Recent Posts-->
+      <section class="section section-recent">
+        <div class="row">
+          <div class="col s12 m6 l8">
+            <div class="card">
+              <div class="card-content red darken-2 white-text">
+                <span class="card-title">Recent Posts</span>
+                <form action="" id=""></form>
+              </div>
+            </div>
+          </div>
+          <div class="col s12 m6 l8">
+            <div class="card">
+              <div class="card-content">
+                <span class="card-title">Quick Todos</span>
+                <form action="" id="todo-form" >
+                  <div class="input-field">
+                    <input type="text" id="todo" placeholder="Add Todo...">
+                  </div>
+                </form>
+                <ul class="collectiion todos">
+                  <li class="collection-item">
+                    <div>Todo One
+                      <a href="#!" class="secondary-content delete"><i class="material-icons">close</i></a>
+                    </div>
+                  </li>
+                  <li class="collection-item">
+                    <div>Todo Two
+                      <a href="#!" class="secondary-content delete"><i class="material-icons">close</i></a>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <!--Toast-->
+      <div class="row">
+        <div class="center">
+          <a class="red-text text-lighten-1 waves-effect waves-light" style="cursor: pointer;" onclick="M.toast({html: 'Liked', classes:'rounded'})"><i class="material-icons">thumb_up</i></a>
+          <a class="red-text text-lighten-1 waves-effect waves-light" style="cursor: pointer;" onclick="M.toast({html: 'Disliked', classes:'rounded'})"><i class="material-icons">thumb_down</i></a>
+        </div>
+      </div>
+      <!--Footer-->
+      <footer class="section red darken-2 white-text center">
+        <p>© 2022 Copyright Text</p> 
+      </footer>
+    
+
+      
+
+
+
+
+    <!-- Jquery CDN-->
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <!-- Compiled and minified Javascript-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script> 
+    <!--canva chart-->
+    <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+    <script> 
+        $(document).ready(function(){
+        $('.sidenav').sidenav();});
+        $('.materialboxed').materialbox({
+        inDuration: 1000,
+        outDuration: 1000
+      });
+       
+       </script>
+ </body>
+ </html>

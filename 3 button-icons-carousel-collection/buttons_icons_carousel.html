@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Compiled and minified CSS-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!-- Font Awesome-->
+    <script src="https://kit.fontawesome.com/6a79530112.js" crossorigin="anonymous"></script>
+    <!-- Material Icons-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <title>Buttons & Icons</title>
+</head>
+<body class="grey dark">
+    <div class="container"> 
+        <h1 class="amber-text">Buttons & Icons</h1>
+        <!-- Standard Button-->
+        <button class="btn green yellow-text">Read More</button>
+        <a href="" class="btn">Read More</a>
+        <br><br>
+        <button class="btn red white-text waves-effect waves-light">Read More</button>
+        <a href="https://www.instagram.com/" class="btn waves-effect waves-red red-text white">Instagram</a>
+
+        <!-- Button with material icons-->
+        <a href="" class="btn lime">
+            <i class="material-icons right">android</i>
+        Buy Now    
+        </a>
+        <button href="" class="btn-large lime">
+            <i class="material-icons right">android</i>
+        Buy Now    
+        </button>
+
+        <!-- FLoating Action Button-->
+        <button class="btn-floating btn-large pulse blue lighten-1">
+            <i class="material-icons">publish</i>
+        </button>
+
+        <div class="fixed-action-btn">
+            <button class="btn-floating btn-large pulse blue lighten-1">
+                <i class="material-icons">edit</i>
+            </button>    
+            <ul>
+                <li><a class="btn-floating red"><i class="material-icons">insert_chart</i></a></li>
+                <li><a class="btn-floating yellow darken-1"><i class="material-icons">airplay</i></a></li>
+                <li><a class="btn-floating green"><i class="material-icons">apps</i></a></li>
+                <li><a class="btn-floating blue"><i class="material-icons">attach_file</i></a></li>
+              </ul>
+        </div>
+
+    
+        <!-- Carousel -->
+        <div class="carousel">
+            <a href="#one" class="carousel-item">
+                <img src="images/img1.jpg" alt="">
+            </a>
+            <a href="#two" class="carousel-item">
+                <img src="images/img2.jpg" alt="">
+            </a>
+            <a href="#three" class="carousel-item">
+                <img src="images/img3.jpg" alt="">
+            </a>
+            <a href="#four" class="carousel-item">
+                <img src="images/img4.jpg" alt="">
+            </a>
+        </div>
+
+        <!-- Full width slider-->
+        <div class="carousel carousel-slider">
+            <a href="#one" class="carousel-item">
+                <img src="images/img1.jpg" alt="">
+            </a>
+            <a href="#two" class="carousel-item">
+                <img src="images/img2.jpg" alt="">
+            </a>
+            <a href="#three" class="carousel-item">
+                <img src="images/img3.jpg" alt="">
+            </a>
+            <a href="#four" class="carousel-item">
+                <img src="images/img4.jpg" alt="">
+            </a>
+        </div>
+
+        <!--Content slider-->
+        <div class="carousel carousel-slider center">
+            <div class="carousel-fixed-item center">
+                <a href="#" class="btn-waves-effect white grey-text darken-text-2">Button</a>
+            </div>
+            <div class="carousel-item red white-text">
+                <h2>First Panel</h2>
+            </div>
+            <div class="carousel-item amber white-text">
+                <h2>Second Panel</h2>
+            </div>
+            <div class="carousel-item purple white-text">
+                <h2>Third Panel</h2>
+            </div>
+            <div class="carousel-item green white-text">
+                <h2>Fourth Panel</h2>
+            </div>
+        </div>
+        
+
+    </div>
+    
+    <!-- Jquery CDN-->
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <!-- Compiled and minified Javascript-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <script>
+         $(document).ready(function(){
+            // Init Floating action button
+            $('.fixed-action-btn').floatingActionButton();
+            // init carousel
+            $('.carousel').carousel();
+            // init full width slider
+            $('.carousel.carousel-slider').carousel({
+            fullWidth: false,
+            indicators: true
+            });
+            
+
+            
+          });
+    </script>
+
+
+</body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <!-- Compiled and minified CSS-->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+     <!-- Font Awesome-->
+     <script src="https://kit.fontawesome.com/6a79530112.js" crossorigin="anonymous"></script>
+     <!-- Material Icons-->
+     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">   
+    <title>Modal</title>
+</head>
+
+<body class="black">
+    <div class="container">
+        <h1 class="yellow-text">Welcome to my website!</h1>
+        <!-- Modal trigger-->
+        <a href="#modal1" class="btn yellow waves-effect waves-light black-text modal-trigger">Click me!</a>
+        <!-- Model structure -->
+        <div id="modal1" class="modal">
+            <div class="modal-content yellow">
+                <h4>CONGRATULATIONS!</h4>
+                <p>You just won 1 peso by visiting my website. Thank you! </p>
+            </div>
+            <div class="modal-footer yellow">
+                <a href="#!" class="modal-close btn black waves-effect btn-flat yellow-text">Close</a>
+            </div>
+        </div>
+        <!-- Modal with fixed footer-->
+         <!-- Modal trigger-->
+         <a href="#modal2" class="btn yellow waves-effect waves-light black-text modal-trigger">Click me!</a>
+         <!-- Model structure -->
+         <div id="modal2" class="modal modal-fixed-footer">
+             <div class="modal-content yellow">
+                 <h4>CONGRATULATIONS!</h4>
+                 <p>You just won 1 peso by visiting my website. Thank you! </p>
+             </div>
+             <div class="modal-footer yellow">
+                 <a href="#!" class="modal-close btn black waves-effect btn-flat yellow-text">Close</a>
+             </div>
+         </div>
+          <!-- Bottom Sheet Modals-->
+    <a href="#modal3" class="btn yellow waves-effect waves-light black-text modal-trigger">Click me!</a>
+
+    <!--Bottom Modal structure-->
+    <div id="modal3" class="modal bottom-sheet">
+        <div class="modal-content">
+            <ul class="collection">
+                <h1>Participants</h1>
+                <li class="collection-item avatar">
+                    <i class="material-icons circle pink"></i>
+                    <span class="title">Mark Joseph Pascua</span>
+                    <Second>First Line <br>
+                    Second line</p>
+                    <a href="#!" class="secondary-content">
+                    <i class="material-icons">grade</i>
+                    </a>
+                </li>
+                <li class="collection-item avatar">
+                    <i class="material-icons circle blue"></i>
+                    <span class="title">Juan Dela Cruz</span>
+                    <Second>First Line <br>
+                    Second line</p>
+                    <a href="#!" class="secondary-content">
+                    <i class="material-icons">grade</i>
+                    </a>
+                </li>
+                <li class="collection-item avatar">
+                    <i class="material-icons circle purple"></i>
+                    <span class="title">Tina Cruz</span> 
+                    <Second>First Line <br>
+                    Second line</p>
+                    <a href="#!" class="secondary-content">
+                    <i class="material-icons">grade</i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    </div>
+
+
+   
+<!-- Jquery CDN-->
+<script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+<!-- Compiled and minified Javascript-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script> 
+<script>
+    $(document).ready(function(){
+    $('.modal').modal();
+  });
+</script>
+</body>
+</html>

@@ -1,0 +1,17 @@
+h1 {
+   color: yellow; 
+}
+
+body {
+    background: grey;
+}
+
+button {
+    width: 100px;
+    padding: 10px;
+    background: pink;
+    border: none;
+    color: white;
+    border-radius: 5%;
+    cursor: pointer;
+}
