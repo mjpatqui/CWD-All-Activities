@@ -156,21 +156,28 @@
                     <div id="chartContainer" style="height: 300px; width: 100%;"></div>
                 <script src="mostviewedchart.js"></script>
                 </div> 
-                <!--Comments-->
+                
+                <!--Latest Comments-->
                 <div class="col s12 m6 l6">
-                    <div class="card-panel grey lighten-5 z-depth-3" style="border-radius: 50px;">
-                        <div class="row valign-wrapper">
-                            <div class="col s5">
-                                <img src="images/mori1.jpg" alt="" class="responsive-img circle">
-                            </div>
-                            <div >
-                                <h1 class="black-text" style="font-size:30px; font-weight: bold; margin-top: 0%; margin-bottom: 0%;">Morissette Amon</h1>
-                                <p class="black-text" style="font-size: 20px; margin-top: 0%;">
-                                    My dream is to produce more music in the future.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
+                  <ul class="collection with-header latest-comments" style="border-radius: 20px;">
+                    <li class="collection-header">
+                      <h5 style="font-weight: bolder;">Latest Comments</h5>
+                    </li>
+                    <li class="collection-item avatar">
+                      <img src="images/mori3.jpg" class="circle" alt="">
+                      <span class="title" style="font-weight: bold;">Morissette Amon</span>
+                      <p class="truncate">Let's create music together!</p>
+                      <a href="#!" class="approve green-text">Approve</a> |
+                      <a href="#!" class="deny red-text">Deny</a>
+                    </li>
+                    <li class="collection-item avatar">
+                      <img src="images/davelamar.jpg" class="circle" alt="">
+                      <span class="title" style="font-weight: bold;">Dave Lamar</span>
+                      <p class="truncate">Sure, babe!</p>
+                      <a href="#!" class="approve green-text">Approve</a> |
+                      <a href="#!" class="deny red-text">Deny</a>
+                    </li>
+                  </ul>
                 </div>   
         </div> 
       </section>
@@ -195,7 +202,7 @@
                     <input type="text" id="todo" placeholder="Add Todo...">
                   </div>
                 </form>
-                <ul class="collectiion todos">
+                <ul class="collection todos">
                   <li class="collection-item">
                     <div>Todo One<a href="#!" class="secondary-content delete"><i class="material-icons white-text">close</i></a>
                     </div>
