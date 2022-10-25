@@ -167,26 +167,26 @@
                       <img src="images/mori3.jpg" class="circle" alt="">
                       <span class="title" style="font-weight: bold;">Morissette Amon</span>
                       <p class="truncate">Let's create music together!</p>
-                      <a href="#!" class="approve green-text">Approve</a> |
-                      <a href="#!" class="deny red-text">Deny</a>
+                      <a href="#!" class="approve green-text delete">Read</a> |
+                      <a href="#!" class="deny red-text delete">Delete</a>
                     </li>
                     <li class="collection-item avatar">
                       <img src="images/davelamar.jpg" class="circle" alt="">
                       <span class="title" style="font-weight: bold;">Dave Lamar</span>
                       <p class="truncate">Sure, babe!</p>
-                      <a href="#!" class="approve green-text">Approve</a> |
-                      <a href="#!" class="deny red-text">Deny</a>
+                      <a href="#!" class="approve green-text delete">Read</a> |
+                      <a href="#!" class="deny red-text delete">Delete</a>
                     </li>
                   </ul>
                 </div>   
         </div> 
       </section>
 
-      <!-- Section: Recent Posts-->
-      <section class="section section-recent">
+      <!-- Section: Recent Concerts-->
+     <section class="section section-recent">
         <div class="row">
           <div class="col s6 m6 l6">
-            <div class="card" style="border-radius: 20px;">
+            <div class="card" id="card-form" style="border-radius: 20px;">
               <div class="card-content red darken-2 white-text" style="border-radius: 20px;">
                 <span class="card-title" style="font-weight: bold;">Concerts</span>
                 <table class="highlight">
@@ -200,29 +200,66 @@
                     <tr>
                       <td>Philippines</td>
                       <td>Dec, 2022</td>
+                      <td>
+                        <a class="btn white green-text waves-effect waves-dark btn modal-trigger" href="#concert1">DETAILS</a>
+                      </td>
                     </tr>
                   </tbody>
                   <tbody>
                     <tr>
                       <td>Canada</td>
                       <td>Jan, 2023</td>
+                      <td>
+                        <a class="btn white green-text waves-effect waves-dark btn modal-trigger" href="#concert2">DETAILS</a>
+                      </td>
                     </tr>
                   </tbody>
                   <tbody>
                     <tr>
                       <td>United Arab Emirates</td>
                       <td>Mar, 2023</td>
+                      <td>
+                        <a class="btn white green-text waves-effect waves-dark btn modal-trigger" href="#concert3">DETAILS</a>
+                      </td>
                     </tr>
                   </tbody>
                 </table>
               </div>
             </div>
           </div>
-
+          
+          <!-- Modal Structure -->
+  <div id="concert1" class="modal" style="border-radius: 20px;">
+    <div class="modal-content">
+      <h4>Philippine Concert Details</h4>
+      <p>A bunch of text</p>
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>
+    </div>
+  </div>
+  <div id="concert2" class="modal" style="border-radius: 20px;">
+    <div class="modal-content">
+      <h4>Canada Concert Details</h4>
+      <p>A bunch of text</p>
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>
+    </div>
+  </div>  
+  <div id="concert3" class="modal" style="border-radius: 20px;">
+    <div class="modal-content">
+      <h4>United Arab Emirates Concert Details</h4>
+      <p>A bunch of text</p>
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>
+    </div>
+  </div>
           <!--ToDos-->
           <div class="col s6 m6 l6">
             <div class="card" style="border-radius: 20px;">
-              <div class="card-content red darken-2" style="border-radius: 20px;">
+              <div class="card-content red darken-2" style="border-radius: 20px; padding-bottom: 15%;">
                 <span class="card-title white-text" style="font-weight: bold;">Suggestions</span>
                 <form action="" id="todo-form" >
                   <div class="input-field">
@@ -242,16 +279,70 @@
               </div>
             </div>
           </div>
+
         </div>
       </section>
       
       <!--Toast-->
       <div class="row">
         <div class="center">
-          <a class="red-text text-lighten-1 waves-effect waves-light" style="cursor: pointer;" onclick="M.toast({html: 'Liked', classes:'rounded'})"><i class="material-icons">thumb_up</i></a>
-          <a class="red-text text-lighten-1 waves-effect waves-light" style="cursor: pointer;" onclick="M.toast({html: 'Disliked', classes:'rounded'})"><i class="material-icons">thumb_down</i></a>
+          <a class="red-text lighten-1 waves-effect waves-light" style="cursor: pointer;" onclick="M.toast({html: 'Liked', classes:'rounded'})"><i class="material-icons">thumb_up</i></a>
+          <a class="red-text lighten-1 waves-effect waves-light" style="cursor: pointer;" onclick="M.toast({html: 'Disliked', classes:'rounded'})"><i class="material-icons">thumb_down</i></a>
         </div>
       </div>
+
+       <!-- FLoating Action Button-->
+       <div class="fixed-action-btn">
+        <a class="btn-floating btn-large red">
+          <i class="large material-icons">menu</i>
+        </a>
+        <ul>
+          <li><a class="btn-floating red modal-trigger" href="#modal1"><i class="material-icons">insert_chart</i></a></li>
+          <li><a class="btn-floating yellow darken-1"><i class="material-icons">format_quote</i></a></li>
+          <li><a class="btn-floating green"><i class="material-icons">publish</i></a></li>
+          <li><a class="btn-floating blue"><i class="material-icons">attach_file</i></a></li>
+        </ul>
+      </div>
+
+      <!--Modal for insert chart-->
+            <!-- Modal Structure -->
+  <div id="modal1" class="modal" style="border-radius: 30px;">
+    <div class="modal-content">
+      <h4>Add post</h4>
+      <form id="postform">
+        <div class="input-field">
+          <input type="text" id="name">
+          <label for="title">Name</label>
+        </div>
+        <div class="input-field">
+          <input type="text" id="post">
+          <label for="title">Post</label>
+        </div>  
+      <div class="input-field">
+        <select>
+          <option value="" disabled selected>Choose your option</option>
+          <option value="1">Option 1</option>
+          <option value="2">Option 2</option>
+          <option value="3">Option 3</option>
+        </select>
+      </div>
+      <div class="input-field">
+        <input type="text" class="datepicker" id="datepicker" >
+        <label for="datepicker">Select Date</label>
+      </div>
+      <div class="input-field">
+        <input type="text" class="timepicker" id="timepicker">
+        <label for="timepicker">Select Time</label>
+      </div> 
+      <div class="modal-footer">
+        <a href="#!" class="modal-close red darken-2 waves-effect waves btn" onclick="myFunction()">Post</a>
+      </div>
+      </form> 
+    </div>
+  </div>
+
+
+
       <!--Footer-->
       <footer class="section red darken-2 white-text center">
         <p>© 2022 Copyright Text</p> 
@@ -269,6 +360,16 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script> 
     <!--canva chart-->
     <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+    <!--Click Floating Button-->
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.fixed-action-btn');
+    var instances = M.FloatingActionButton.init(elems, {
+      direction: 'left',
+      hoverEnabled: false
+    });
+  });
+    </script>
     <script> 
         $(document).ready(function(){
         $('.sidenav').sidenav();});
@@ -276,11 +377,12 @@
         inDuration: 1000,
         outDuration: 1000
       });
-
-
-
-
-
+      //Floating action button
+      $('.fixed-action-btn').floatingActionButton();
+      //Modals
+      $('.modal').modal();
+      //Select or Options
+      $('select').formSelect();
       //Suggestions
       $('#todo-form').submit(function(e) {
         const output = `
@@ -295,7 +397,33 @@
         $('.todos').append(output);
         e.preventDefault();
       });
-       
+      //For Lastest Comments
+
+      function myFunction() {
+    document.getElementById("postform").submit()
+    const output = `
+                    <li class="collection-item avatar">
+                      <img src="images/user.jpg" class="circle" alt="">
+                      <span class="title" style="font-weight: bold;">Dave Lamar</span>
+                      <p class="truncate">Sure, babe!</p>
+                      <a href="#!" class="approve green-text delete">Read</a> |
+                      <a href="#!" class="deny red-text delete">Delete</a>
+                    </li>
+        `;
+        console.log($('#name,#post').val());
+        $('.latest-comments').append(output);
+        e.preventDefault();
+     }
+      //Delete Comments
+      $('.latest-comments').on('click', '.delete', function() {
+        $(this).parent().remove();
+        console.log(this)
+      })
+      //DatePicker
+    $('.timepicker').timepicker();
+     //Time Picker
+    $('.datepicker').datepicker();
+
       //Delete Suggestions
       $('.todos').on('click', '.delete', function() {
         $(this).parent().parent().remove();
