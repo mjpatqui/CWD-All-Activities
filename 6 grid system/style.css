@@ -1,0 +1,25 @@
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+  }
+
+  main {
+    flex: 1 0 autoa
+  }
+
+  .box {
+    background-color: rgb(255, 230, 0);
+    border-radius:10px;
+    padding:10px;
+    text-align: center;
+    margin-top: 20px;
+    color: black;
+  }
+  .card-panel{
+    color: purple;
+    border-radius:30px;
+    padding:10px;
+    text-align: center;
+    margin-top: 20px;
+  }
