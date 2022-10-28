@@ -14,7 +14,7 @@
     <script src="https://kit.fontawesome.com/6a79530112.js" crossorigin="anonymous"></script>
     <!-- Material Icons-->
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">   
-    <title>Grid System</title>
+    <title>Small Project</title>
  </head>
  <body class="grey darken-4">
     <!--Navigation Bar-->
@@ -341,19 +341,12 @@
     </div>
   </div>
 
-
-
       <!--Footer-->
       <footer class="section red darken-2 white-text center">
         <p>© 2022 Copyright Text</p> 
       </footer>
-    
 
       
-
-
-
-
     <!-- Jquery CDN-->
     <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
     <!-- Compiled and minified Javascript-->
@@ -383,6 +376,8 @@
       $('.modal').modal();
       //Select or Options
       $('select').formSelect();
+
+
       //Suggestions
       $('#todo-form').submit(function(e) {
         const output = `
@@ -391,21 +386,20 @@
                       <a href="#!" class="secondary-content delete"><i class="material-icons red-text darken-2">close</i></a>
                     </div>
                   </li>
-
         `;
         console.log($('#todo').val());
         $('.todos').append(output);
         e.preventDefault();
       });
-      //For Lastest Comments
 
+      //For Lastest Comments
       function myFunction() {
     document.getElementById("postform").submit()
     const output = `
                     <li class="collection-item avatar">
                       <img src="images/user.jpg" class="circle" alt="">
-                      <span class="title" style="font-weight: bold;">Dave Lamar</span>
-                      <p class="truncate">Sure, babe!</p>
+                      <span class="title" style="font-weight: bold;">${$('#name').val()}</span>
+                      <p class="truncate">${$('#post').val()}</p>
                       <a href="#!" class="approve green-text delete">Read</a> |
                       <a href="#!" class="deny red-text delete">Delete</a>
                     </li>
